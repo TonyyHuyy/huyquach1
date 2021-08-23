@@ -1,0 +1,172 @@
+
+:root {
+  --clr-white: #efefef;
+  --clr-lightgray: #ddd;
+  --clr-darkgray: #333;
+  --clr-accent: #ee6352;
+  
+  --icon-plus: "\f067";
+  --icon-check: "\f00c";
+}
+p {
+  color: white;
+}
+
+.introduction {
+  --title-size: 70px;
+  --title-color: white;
+  padding: 5em 15vw;
+  background: url(https://i0.wp.com/codemyui.com/wp-content/uploads/2019/06/Shooting-Star-Background-in-Pure-CSS-1.gif?fit=880%2C440&ssl=1);
+}
+
+.cta {
+  --title-color: white;
+  --list-icon: var(--icon-check);
+  --list-icon-color: white;
+  --button-bg: white;
+  --button-text: var(--clr-darkgray);
+  --button-scale: 2;
+  
+  background: #f53d50;
+  padding: 2em 15vw;
+  margin-bottom: 3em;
+}
+
+.plans {
+  --title-weight: 300;
+  text-align: center;
+}
+
+.pricing {
+  --list-icon: var(--icon-plus);
+  
+  background: var(--background);
+  color: var(--text);
+  padding: 3em 2em;
+}
+
+.pricing-basic {
+  --background: var(--clr-white);
+  --list-icon-color: var(--button);
+}
+
+.pricing-dark {
+  --background: var(--clr-darkgray);
+  --text: var(--clr-white);
+}
+
+.pricing-accent {
+  --background: var(--clr-accent);
+  --text: white;
+  --button-bg: var(--clr-darkgray);
+  --list-icon-color: var(--clr-darkgray);
+}
+.pricing-text {
+  --background: #e33dbc;
+  --text: white;
+  --button-bg: var(--clr-darkgray);
+  --list-icon-color: var(--clr-darkgray);}
+
+.pricing-rainbow {
+  /* you can do pretty much anything you want */
+  --background: #24660c;
+  --text: white;
+  --list-icon: "\f75b";
+  --list-icon-color: purple;
+  --button-bg: var(--clr-darkgray);
+  --button-text: white;
+}
+
+footer {
+  --title-color: var(--clr-accent);
+  --title-weight: 300;
+  color: var(--clr-lightgray);
+  background: var(--clr-darkgray);
+  padding: 3em 15vw;
+  margin-top: 5em;
+}
+
+.title {
+  font-family: arial;
+  color: white;
+  font-size: var(--title-size, 2.5rem);
+  font-weight: var(--title-weight, 700);
+  margin: 0 0 .15em;
+  grid-column: 1 / -1;
+  line-height: 1;
+}
+
+.button {
+  background: var(--button-bg, var(--clr-accent));
+  color: var(--button-text, white);
+  font-size: calc(var(--button-scale) * 1rem);
+  padding: .5em 1.25em;
+  border: 0;
+  border-radius: 2em;  
+  cursor: pointer;
+  transition: transform 175ms;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.icon-list {
+  text-align: left;
+  margin: 0 0 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.icon-list li:before {  
+  content: var(--list-icon);
+  color: var(--list-icon-color);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: .65em;
+  float: left;
+  margin: .5em 1em 0 0;
+}
+
+.category {
+  margin: 0 0 .5em;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: .85rem;
+  color: var(--clr-text);
+  letter-spacing: 3px;
+  line-height: .8;
+}
+
+.price {
+  font-size: 4rem;
+  margin: .25em 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: basic-sans, sans-serif;
+  min-height: 100vh;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: var(--clr-darkgray);
+  background: var(--clr-lightgray);
+}
+
+.plans {
+  background-image: url(https://img3.thuthuatphanmem.vn/uploads/2019/10/10/background-3d-dong_032845717.gif);
+  width: 80vw; 
+  margin: 0 auto;
+  padding: calc(.5em + 3vw);
+  box-shadow: 0 0 3em rgba(0,0,0,.15);
+  display: grid;
+  grid-gap: 1em;
+  grid: auto / repeat(auto-fit, minmax(250px, 1fr));
+}
+
+code {
+  background: rgba(238, 99, 82, .2);
+}
